@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  rotate:
+    image: glide/cron-rotate-backups:0.1
+    build: .
+    volumes:
+      - ./backup:/data
+    environment:
+      ROTATE_CRON: "* * * * *"
+      ROTATE_OPTIONS: "--daily=7 --weekly=4 --monthly=12 --yearly=2"
