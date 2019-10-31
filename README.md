@@ -18,9 +18,9 @@ services:
       ROTATE_OPTIONS: "--daily=7 --weekly=4 --monthly=12 --yearly=2"
 ```
 
-This will maintain a `backup` directory files.  
-It will keep one file for each last 7 days, 4 weeks, 12 months and 2 years, and remove the other files.  
-It will run every minutes to make sure the files are up to date.  
+This will maintain files of a `backup` directory.  
+It will keep one file for each last 7 days, 4 weeks, 12 months, 2 years and remove the other files.  
+It will run every minutes to make sure the directory is up to date.  
 Use `--dry-run` to check what would happen before to avoid loosing unexpected files.
 
 See [rotate-backups doc](https://rotate-backups.readthedocs.io/en/latest/) for more informations
