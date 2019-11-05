@@ -10,7 +10,6 @@ version: "3"
 services:
   rotate:
     image: glide/cron-rotate-backups:0.1
-    build: .
     volumes:
       - ./backup:/data
     environment:
